@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:musicalAdventCalender"
         mc:Ignorable="d"
-        Title="Musical Advent Calendar" Height="131.333" Width="312.333">
+        Title="Musical Advent Calendar" Height="131.333" Width="312.333" ResizeMode="CanMinimize">
     <Grid>
         <Label x:Name="label" Content="There are&#xD;&#xA;" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.842,0.731" FontStretch="UltraExpanded" Width="87" Height="25"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="84,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
