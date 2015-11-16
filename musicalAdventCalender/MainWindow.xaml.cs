@@ -29,14 +29,16 @@ namespace musicalAdventCalender
         }
 
 
-        String daysUntilChristmas()
+        int daysUntilChristmas()
         {
 
             DateTime thisDay = DateTime.Today;
             DateTime christmasDay = new DateTime(thisDay.Year, 12, 25);
             TimeSpan diffBetween = christmasDay - thisDay;
-            return diffBetween.ToString(@"dd");
-            
+            string timeDifference = diffBetween.ToString(@"dd");
+            int christmasDays = Int32.Parse(timeDifference) -1;
+            return christmasDays;
+
 
         }
 
@@ -80,7 +82,7 @@ namespace musicalAdventCalender
 "https://www.youtube.com/watch?v=19vVSxyWFSU"
 
             };
-            int christmasDays = Int32.Parse(daysUntilChristmas());
+            int christmasDays = daysUntilChristmas();
             if (christmasDays < 26)
             {
                 string linkCommand = links[christmasDays];
@@ -99,7 +101,7 @@ namespace musicalAdventCalender
         }
         private void drawChristmasDays()
         {
-            textBlock.Text = daysUntilChristmas();
+            textBlock.Text = daysUntilChristmas().ToString();
         }
     }
 }
