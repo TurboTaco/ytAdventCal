@@ -29,14 +29,14 @@ namespace musicalAdventCalender
         }
 
 
-        int daysUntilChristmas()
+        private int daysUntilChristmas()
         {
 
             DateTime thisDay = DateTime.Today;
             DateTime christmasDay = new DateTime(thisDay.Year, 12, 25);
             TimeSpan diffBetween = christmasDay - thisDay;
             string timeDifference = diffBetween.ToString(@"dd");
-            int christmasDays = Int32.Parse(timeDifference) -1;
+            int christmasDays = Int32.Parse(timeDifference);
             return christmasDays;
 
 
@@ -56,30 +56,30 @@ namespace musicalAdventCalender
         {
             string[] links = new string[25] {
                 "https://www.youtube.com/watch?v=j9jbdgZidu8",
-"https://www.youtube.com/watch?v=V9BZDpni56Y",
-"https://www.youtube.com/watch?v=VQhuoY5h2kE",
-"https://www.youtube.com/watch?v=KI5ze9rBlpk",
-"https://www.youtube.com/watch?v=B0zaDApGBbI",
-"https://www.youtube.com/watch?v=IM_H4CAAYxc",
-"https://www.youtube.com/watch?v=HeEo9a8rbYk",
-"https://www.youtube.com/watch?v=3IyaHwwqn-c",
-"https://www.youtube.com/watch?v=yN4Uu0OlmTg",
-"https://www.youtube.com/watch?v=0A8KT365wlA",
-"https://www.youtube.com/watch?v=9YUsiwRlz2s",
-"https://www.youtube.com/watch?v=ZeyHl1tQeaQ",
-"https://www.youtube.com/watch?v=P8MntONTbuA",
-"https://www.youtube.com/watch?v=5aw2yuYAKoE",
-"https://www.youtube.com/watch?v=DDt3u2Ev1cI",
-"https://www.youtube.com/watch?v=olYhTePkTxA",
-"https://www.youtube.com/watch?v=LAdmdunWvsA",
-"https://www.youtube.com/watch?v=_93Uun_YclM",
-"https://www.youtube.com/watch?v=DiXjbI3kRus",
-"https://www.youtube.com/watch?v=ChU4M3fe-9Q",
-"https://www.youtube.com/watch?v=5r8bZCXdVNA",
-"https://www.youtube.com/watch?v=5aw2yuYAKoE",
-"https://www.youtube.com/watch?v=lkN5M-nJx6A",
-"https://www.youtube.com/watch?v=8OsgqpnuizY",
-"https://www.youtube.com/watch?v=19vVSxyWFSU"
+                "https://www.youtube.com/watch?v=V9BZDpni56Y",
+                "https://www.youtube.com/watch?v=VQhuoY5h2kE",
+                "https://www.youtube.com/watch?v=KI5ze9rBlpk",
+                "https://www.youtube.com/watch?v=B0zaDApGBbI",
+                "https://www.youtube.com/watch?v=IM_H4CAAYxc",
+                "https://www.youtube.com/watch?v=HeEo9a8rbYk",
+                "https://www.youtube.com/watch?v=3IyaHwwqn-c",
+                "https://www.youtube.com/watch?v=yN4Uu0OlmTg",
+                "https://www.youtube.com/watch?v=0A8KT365wlA",
+                "https://www.youtube.com/watch?v=9YUsiwRlz2s",
+                "https://www.youtube.com/watch?v=ZeyHl1tQeaQ",
+                "https://www.youtube.com/watch?v=P8MntONTbuA",
+                "https://www.youtube.com/watch?v=5aw2yuYAKoE",
+                "https://www.youtube.com/watch?v=DDt3u2Ev1cI",
+                "https://www.youtube.com/watch?v=olYhTePkTxA",
+                "https://www.youtube.com/watch?v=LAdmdunWvsA",
+                "https://www.youtube.com/watch?v=_93Uun_YclM",
+                "https://www.youtube.com/watch?v=DiXjbI3kRus",
+                "https://www.youtube.com/watch?v=ChU4M3fe-9Q",
+                "https://www.youtube.com/watch?v=5r8bZCXdVNA",
+                "https://www.youtube.com/watch?v=5aw2yuYAKoE",
+                "https://www.youtube.com/watch?v=lkN5M-nJx6A",
+                "https://www.youtube.com/watch?v=8OsgqpnuizY",
+                "https://www.youtube.com/watch?v=19vVSxyWFSU"
 
             };
             int christmasDays = daysUntilChristmas();
